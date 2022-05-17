@@ -29,6 +29,33 @@ function UsuarioDefault(req, res) {
 
 }
 
+function RegistrarUsuario(req, res) {
+    var parametros = req.body;
+    var usuarioModel = new Usuario();
+    if (parametros.nombre && parametros.email && parametros.password) {
+        usuarioModel.nombre = parametros.nombre;
+        usuarioModel.email = parametros.email;
+        usuarioModel.rol = 'USUARIO';
+        Usuario.find({ email: parametros.email }, (err, usuarioEncontrado) => {
+            if (usuarioEncontrado.length <= 0) {
+                bcrypt.hash(parametros.password, null, null, (err, passwordEncriptada) => {
+                    usuarioModel.password = passwordEncriptada;
+                    usuarioModel.save((err, usuarioGuardado) => {
+                        if (err) return res.status(500)
+                            .send({ mensaje: 'Error en la petición :/' });
+                        if (!usuarioGuardado) return res.status(500)
+                            .send({ mensaje: 'Error al agregar el Usuario :(' });
+                        return res.status(200).send({ usuario: usuarioGuardado });
+                    });
+                });
+            } else {
+                return res.status(500)
+                    .send({ mensaje: 'Este usuario, ya  se encuentra utilizado :c' });
+            }
+        })
+    }
+}
+
 function Login(req, res) {
     var parametros = req.body;
 
@@ -86,5 +113,6 @@ function Login(req, res) {
 }
 module.exports = {
     UsuarioDefault,
-    Login
+    Login,
+    RegistrarUsuario
 }
