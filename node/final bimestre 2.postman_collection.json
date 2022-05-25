@@ -1,0 +1,678 @@
+{
+	"info": {
+		"_postman_id": "346e4742-a6ef-48f0-b321-f80bc2248e2e",
+		"name": "final bimestre 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "AgregarEmpresa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg3NGNlYTIzNTBhMTQ0NzY3ZDhkYjUiLCJub21icmUiOiJTdXBlckFkbWluIiwicm9sIjoiUk9MX0FkbWluIiwiaWF0IjoxNjUzMDgzMzMyLCJleHAiOjE2NTMyNTYxMzJ9.G_UHBMJDwOh9wVKzg8AS-q1o6VJQy7MPBrUNlV3c0mM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "macdonal",
+									"type": "default"
+								},
+								{
+									"key": "direccion",
+									"value": "naranjo",
+									"type": "default"
+								},
+								{
+									"key": "descripcion",
+									"value": "asdasd",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "741",
+									"type": "default"
+								},
+								{
+									"key": "numero",
+									"value": "4655",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "mac",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/crearEmpresa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crearEmpresa"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "dirreccion ",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "descripcion",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg1ZjdjNWMxYTJhMzU2MmE0YmIzOTciLCJub21icmUiOiJtYWNkb25hbCIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NTI5NDczMDIsImV4cCI6MTY1MzIwNjUwMn0.a53bOICYrGL9MUeU3F574DyVQSnyOtIsQdq0BbuO7Q4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombreProducto",
+									"value": "torta de carne ",
+									"type": "default"
+								},
+								{
+									"key": "PrecioProducto",
+									"value": "45",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "96",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/agregarProductosEmpresa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"agregarProductosEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Empresa",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg3NGNlYTIzNTBhMTQ0NzY3ZDhkYjUiLCJub21icmUiOiJTdXBlckFkbWluIiwicm9sIjoiUk9MX0FkbWluIiwiaWF0IjoxNjUzMDgzMzMyLCJleHAiOjE2NTMyNTYxMzJ9.G_UHBMJDwOh9wVKzg8AS-q1o6VJQy7MPBrUNlV3c0mM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "direccion",
+									"value": "a",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/editarEmpresa/62880953fbbf94d57f84ea3b?",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"editarEmpresa",
+								"62880953fbbf94d57f84ea3b"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Empresa",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg3NGNlYTIzNTBhMTQ0NzY3ZDhkYjUiLCJub21icmUiOiJTdXBlckFkbWluIiwicm9sIjoiUk9MX0FkbWluIiwiaWF0IjoxNjUzMDgzMzMyLCJleHAiOjE2NTMyNTYxMzJ9.G_UHBMJDwOh9wVKzg8AS-q1o6VJQy7MPBrUNlV3c0mM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/EliminarEmpresa/62880953fbbf94d57f84ea3b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"EliminarEmpresa",
+								"62880953fbbf94d57f84ea3b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Empresas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg3NGNlYTIzNTBhMTQ0NzY3ZDhkYjUiLCJub21icmUiOiJTdXBlckFkbWluIiwicm9sIjoiUk9MX0FkbWluIiwiaWF0IjoxNjUzMDgzMzMyLCJleHAiOjE2NTMyNTYxMzJ9.G_UHBMJDwOh9wVKzg8AS-q1o6VJQy7MPBrUNlV3c0mM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/obtenerEmpresas",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtenerEmpresas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sucursales",
+			"item": [
+				{
+					"name": "AgregarSucursales",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzA4NjUzMSwiZXhwIjoxNjUzMjU5MzMxfQ.bLKb1BVYtczPCqRs38x2CKebdMXsyEkZETNnyNtvDHQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombreSucursal",
+									"value": "najanjo",
+									"type": "default"
+								},
+								{
+									"key": "numero",
+									"value": "12345678",
+									"type": "default"
+								},
+								{
+									"key": "direccion",
+									"value": "ssdfsd",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/agregarSucursales",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"agregarSucursales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Sucursales",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzA4NjUzMSwiZXhwIjoxNjUzMjU5MzMxfQ.bLKb1BVYtczPCqRs38x2CKebdMXsyEkZETNnyNtvDHQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombreSucursal",
+									"value": "naranjoaa",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/EditarSucursales/62881abd79eafda2cfee4509",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"EditarSucursales",
+								"62881abd79eafda2cfee4509"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Sucursales",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzA4NjUzMSwiZXhwIjoxNjUzMjU5MzMxfQ.bLKb1BVYtczPCqRs38x2CKebdMXsyEkZETNnyNtvDHQ",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/Eliminarsucursales/62881abd79eafda2cfee4509",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"Eliminarsucursales",
+								"62881abd79eafda2cfee4509"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener Sucursales",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos Empresa",
+			"item": [
+				{
+					"name": "Agregar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzA4NjUzMSwiZXhwIjoxNjUzMjU5MzMxfQ.bLKb1BVYtczPCqRs38x2CKebdMXsyEkZETNnyNtvDHQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "jabon",
+									"type": "default"
+								},
+								{
+									"key": "proveedor",
+									"value": "nazis",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "500",
+									"type": "default"
+								},
+								{
+									"key": "precio",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/addProduct",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzA4NjUzMSwiZXhwIjoxNjUzMjU5MzMxfQ.bLKb1BVYtczPCqRs38x2CKebdMXsyEkZETNnyNtvDHQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "proveedor",
+									"value": "jonson",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/editarProducto/62883efa3642ea0c3a99c81d",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"editarProducto",
+								"62883efa3642ea0c3a99c81d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzA4NjUzMSwiZXhwIjoxNjUzMjU5MzMxfQ.bLKb1BVYtczPCqRs38x2CKebdMXsyEkZETNnyNtvDHQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/eliminarProducto/628841eceb55765c43215d9b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminarProducto",
+								"628841eceb55765c43215d9b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Productos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto Sucursales",
+			"item": [
+				{
+					"name": "agregrar productoSucursales",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzExMjY2OCwiZXhwIjoxNjUzMjg1NDY4fQ.TVV1_ff6dbYSMKBMfqWtqelTPFjK9ogc2g4r5p9-OoI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "tazas",
+									"type": "default"
+								},
+								{
+									"key": "precioUnitario",
+									"value": "6",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "100",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/agregarProductoSucursales/628842561b552b48b8f73ada",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"agregarProductoSucursales",
+								"628842561b552b48b8f73ada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Productos Sucursales",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzExMjY2OCwiZXhwIjoxNjUzMjg1NDY4fQ.TVV1_ff6dbYSMKBMfqWtqelTPFjK9ogc2g4r5p9-OoI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "tazas",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/editarProductoSucursales/6288cad40a348f09498d5ecf",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"editarProductoSucursales",
+								"6288cad40a348f09498d5ecf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimi",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzE2MjM5OCwiZXhwIjoxNjUzMjQ4Nzk4fQ.L6UhSnHnXXYsLA1zQ3hCLFwEiWrLVpHiFd62EBPvcUk",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/eliminarProductoSucursal/628842561b552b48b8f73ada/6288cad40a348f09498d5ecf",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminarProductoSucursal",
+								"628842561b552b48b8f73ada",
+								"6288cad40a348f09498d5ecf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Productos Sucrusales",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjg4MGYyMWQ3MzE1MjAxM2U2ZmRjNzAiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTY1MzE2MjM5OCwiZXhwIjoxNjUzMjQ4Nzk4fQ.L6UhSnHnXXYsLA1zQ3hCLFwEiWrLVpHiFd62EBPvcUk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/ObtenerproductosSucursal/628842561b552b48b8f73ada",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ObtenerproductosSucursal",
+								"628842561b552b48b8f73ada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "mac",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "741",
+							"type": "default"
+						},
+						{
+							"key": "gettoken",
+							"value": "true",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
